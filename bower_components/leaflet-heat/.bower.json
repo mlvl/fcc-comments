@@ -1,0 +1,13 @@
+{
+  "name": "leaflet-heat",
+  "homepage": "https://github.com/Leaflet/Leaflet.heat",
+  "_release": "9a41e607d2",
+  "_resolution": {
+    "type": "branch",
+    "branch": "gh-pages",
+    "commit": "9a41e607d2c22d07543e9e979b3d599d686d2129"
+  },
+  "_source": "git@github.com:Leaflet/Leaflet.heat.git",
+  "_target": "gh-pages",
+  "_originalSource": "git@github.com:Leaflet/Leaflet.heat.git"
+}

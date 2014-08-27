@@ -50,6 +50,17 @@ angular.module('dacFccComments.controllers', ['dacFccComments.services'])
       console.log("Error loading data!" + status);
     });
 
+    $http({
+      method: 'GET',
+      url: "app/data/2013-earthquake.json"
+    }).
+    success(function(data, status, headers, config) {
+      $scope.mapdata = data;
+    }).
+    error(function(data, status, headers, config) {
+      console.log("Error loading data!" + status);
+    });
+
     $scope.about = function() {
       $location.path("/about");
     }

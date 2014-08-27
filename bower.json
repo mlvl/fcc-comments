@@ -8,6 +8,13 @@
     "angular": "1.2.x",
     "angular-route": "1.2.x",
     "d3":"latest",
-    "underscore":"latest"
+    "underscore":"latest",
+    "leaflet": "latest",
+    "leaflet-heat": "git@github.com:Leaflet/Leaflet.heat.git#gh-pages"
+  },
+   "overrides": {
+    "leaflet-heat": {
+      "main": "dist/leaflet-heat.js"
+    }
   }
 }
