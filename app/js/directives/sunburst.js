@@ -58,8 +58,9 @@ angular.module('dacFccComments.directives')
             var wordMargin = 100;
             if (mobileDisplay)
               wordMargin = 50;
-            var width = d3.select("#viz_panel")[0][0].clientWidth - (margin / 2);
-            var height = angular.element(window)[0].innerHeight - margin;
+
+            var width = Math.max((angular.element(window)[0].innerWidth/2) - margin/2, 300)
+            var height = angular.element(window)[0].innerHeight - margin*2;
             var radius = Math.min(width, height) / 2;
             var x = d3.scale.linear()
               .range([0, 2 * Math.PI]);

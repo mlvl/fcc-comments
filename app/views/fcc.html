@@ -1,29 +1,46 @@
-  <span id="mlvl_logo">      
-    <a href="http://mlvl.github.io"><img class="logo-img" src="app/img/mlvl-thumb-color-transparent-400.png"/></a>
-  </span>
+<div class="header">
+    <div class="title-ctr">
+      <p class="tagline">An analysis of</p>
+        <span id="product_title">
+            <span class="dark">
+                <a href="#/" class="h-link">FCC Comments</a>
+            </span>
+        </span>
+        <p class="tagline">by Decisive Analytics Corporation</p>
 
-  <div class="header">
-    <span id="product_title">
-      <span class="dark">
-        <a href="#/" class="h-link">FCC Comments</a>
+    </div>
+    <div class="logo-ctr pull-right">
+      <span id="dac_logo">
+        <a href="http://www.dac.us">
+            <img class="logo-img" src="app/img/logo.png" />
+        </a>
       </span>
-    </span>
-    <p class="tagline">a structured display of topics from FCC comments</p>
-    <p class="interaction">Mouseover to explore, click to zoom in, click the center to zoom out.</p>
-  </div>
+      <span id="mlvl_logo">
+          <a href="http://mlvl.github.io">
+              <img class="logo-img" src="app/img/mlvl-thumb-color-transparent-400.png" />
+          </a>
+      </span>
+    </div>
+</div>
 
+<div class="display-header">
+  <span class="display-title">Topics</span>
+  <span class="interaction">Mouseover to explore, click to zoom in, click the center to zoom out.</span>
+</div>
+
+<div class="topic-panel">
   <span id="viz_panel">
-    <div id="sequence" breadcrumb></div>
-    <div id="sunburst" sunburst data="fccdata" ng-hide="displayVis"></div>
+      <div id="sequence" breadcrumb></div>
+      <div id="sunburst" sunburst data="fccdata" ng-hide="displayVis"></div>
   </span>
   <div id="perspective-sunburst" sunburstperspective data="fccdata" ng-hide="displayVis"></div>
+</div>
 
 
-  <div id="chart_footer">
-    <span id="dac_logo">
-      <a href="http://www.dac.us"><img src="app/img/logo.png"/></a>
-    </span>
+<!-- <div id="chart_footer">
     <span id="links">
-      <span>View the source code on <a href="https://github.com/mlvl/dacFccComments">Github</a> and follow us on <a href="https://twitter.com/decisiveUI">Twitter</a></span>
+        <span>View the source code on <a href="https://github.com/mlvl/dacFccComments">Github</a> and follow us on <a href="https://twitter.com/decisiveUI">Twitter</a>
+        </span>
     </span>
-  </div>
+</div>
+ -->

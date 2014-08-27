@@ -1,9 +1,9 @@
 body {
     font: 16px "Lato", sans-serif;
     font-weight: 300;
-    color: #333;
+    color: #2C3E50;
     margin: 0px; padding: 0px;
-    background: #f1f1f1;
+    background: #fff;
 }
 a {
     color: #000;
@@ -15,9 +15,9 @@ a:hover {
 }
 
 /* Header */
-.header {
-    margin-top:10px;
-    text-align: center;
+.title-ctr {
+    display: inline-block;
+    padding: 1em;
 }
 .tagline {
     margin: 0;
@@ -25,21 +25,17 @@ a:hover {
     font-weight: 600;
     font-size: 13px;
 }
-.interaction {
-    text-align: center;
-    font-size: 11px;
-    font-style: italic;
-}
+
 #product_title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-variant: small-caps;
     text-transform: uppercase;
     font-weight: 200;
-    color: #33a02c;
+    color: #2980B9;
 }
 @media (min-width: 990px) {
     #product_title{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .tagline {
         font-size: 11px;
@@ -49,33 +45,45 @@ a:hover {
     font-weight: 800;
 }
 
+/* Sub header for displays */
+.display-header {
+    padding: 2em .5em .5em 2em;
+}
+.display-title {
+    font-size: 1.3em;
+    color: #2C3E50;
+    font-variant: small-caps;
+    text-transform: uppercase;
+}
+.interaction {
+    display: block;
+    margin-left: 2em;
+    font-size: .9em;
+    font-style: italic;
+}
 /* Main Vizualization */
 #viz_panel {
-    width: 100%;
-    float: left;
-    margin-left: 1%;
+    display: inline-block;
 }
-#sunburst {
-    margin-top: -4%;
-    margin-left: 8%;
-}
+
 @media (min-width: 990px) {
-    #viz_panel {
-        width: 44%;
-        margin-left: 17%;
-    }
     #sunburst {
-        margin-top: -3%;
+        margin-top: 1em;
     }
 }
 
 /* Perspective Visualization */
+.topic-panel {
+    margin: auto;
+    width: 98%;
+    text-align: center;
+}
 #perspective-sunburst {
     display: none;
 }
 @media (min-width: 990px) {
     #perspective-sunburst {
-        display: block; 
+        display: inline-block; 
     }
 }
 
@@ -88,14 +96,25 @@ a:hover {
   fill: #222;
 }
 
-/* MLVL Logo */
-#mlvl_logo {
-    position: absolute;
-    left: 1%;
-
+/* Logos */
+.logo-ctr {
+    padding: 1em;
+    display: inline-block;
 }
+
 .logo-img {
-    width: 60px;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+#dac_logo a img{
+    height: 50px;
+}
+#mlvl_logo a img {
+    height: 30px;
+    margin-top: -5px;
+}
+@media (min-width: 990px) {
+
 }
 
 /* About links */
@@ -110,9 +129,6 @@ a:hover {
     font-size: 1.5em;
 }
 @media (min-width: 990px) {
-    .logo-img {
-        width: 100px;
-    }
     #about_link {
         font-size: 1em;
     }
@@ -122,8 +138,7 @@ a:hover {
 }
 @media (min-width: 990px) {
     #perspective-sunburst {
-        margin-top: 12%;
-        margin-left: 12%;
+        vertical-align: top;
     }
 }
 /* Footer */
@@ -163,23 +178,6 @@ a:hover {
         font-size: .9em;
     }
 }
-#dac_logo {
-    display: block;
-    z-index: 1000;
-    text-align: right;
-}
-#dac_logo img {
-    height: 60px;
-}
-
-@media (min-width: 990px) {
-    #dac_logo {
-        text-align: right;
-    }
-    #dac_logo img {
-        height: 60px;
-    }
-}
 
 /* Word size formatting */
 .w0, .w1 {
@@ -217,7 +215,7 @@ a:hover {
 }
 
 .h-link {
-    color: #33a02c;
+    color: #2980B9;
 }
 
 .about > .footer {
@@ -233,4 +231,9 @@ a:hover {
 
 .image-holder img {
     width: 100%;
+}
+
+/* Everything else */
+.pull-right {
+    float: right !important;
 }
