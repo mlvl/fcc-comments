@@ -47,12 +47,28 @@ a:hover {
 
 /* Sub header for displays */
 .display-header {
-    padding: 1em .5em .5em 1em;
-    text-align: left;
-    margin-top: 3em;
+    display: none;
+}
+.display-header-mobile {
+    display: block;
+    text-align: center;
+}
+@media (min-width: 990px) {
+    .display-header {
+        display: block;
+        padding: 1em .5em .5em 1em;
+        text-align: left;
+        margin-top: 3em;
+    }
+    .display-header-mobile {
+        display: none;
+    }
+    .display-title {
+        font-size: 1.5em;
+    }
 }
 .display-title {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: .5em;
     color: #2980B9;
     font-variant: small-caps;
@@ -60,11 +76,18 @@ a:hover {
 }
 .section-description {
     display: block;
-    margin: .5em 0em .1em 2em;
-    width: 400px;
-    font-size: 1.1em;
+    margin: .5em auto .1em auto;
+    width: 95%;
+    font-size: .9em;
     font-weight: 300;
     line-height: 1.4em;
+}
+@media (min-width: 990px) {
+    .section-description {
+        margin: .5em 0em .1em 2em;
+        width: 400px;
+        font-size: 1.1em;
+    }
 }
 .interaction {
     display: block;
@@ -115,12 +138,17 @@ a:hover {
 /* Logos */
 .logo-ctr {
     padding: 1em;
+    display: none;
+}
+#dac_logo {
+    display: inline-block;
+    margin-bottom: 0em;
+}
+#mlvl_logo {
     display: inline-block;
 }
-
 .logo-img {
     margin-left: .5em;
-    margin-right: .5em;
 }
 #dac_logo a img{
     height: 50px;
@@ -130,8 +158,11 @@ a:hover {
     margin-top: -5px;
 }
 @media (min-width: 990px) {
-
+    .logo-ctr {
+        display: inline-block;
+    }
 }
+
 
 /* Map */
 #map {

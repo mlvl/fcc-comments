@@ -10,22 +10,26 @@
 
     </div>
     <div class="logo-ctr pull-right">
-        <span id="dac_logo">
+        <div id="dac_logo">
             <a href="http://www.dac.us">
                 <img class="logo-img" src="app/img/logo.png" />
             </a>
-        </span>
-        <span id="mlvl_logo">
+        </div>
+        <div id="mlvl_logo">
             <a href="http://mlvl.github.io">
                 <img class="logo-img" src="app/img/mlvl-thumb-color-transparent-400.png" />
             </a>
-        </span>
+        </div>
     </div>
 </div>
 
 
 
 <div class="panel">
+    <div class="display-header-mobile">
+        <span class="display-title">Topics</span>
+        <span class="section-description">What topics are within comments? We're able to create a hierarchical structure of the most common topics within commenters' messages. To explore topics, use the large sunburst. Hover to display topics, click to zoom in, and click the center to zoom out. The smaller sunburst will help give you some perspective of the overall topic structure. This analysis was run on 447,000 FCC comments.</span>
+    </div>
     <span id="viz_panel">
         <div id="sequence" breadcrumb></div>
         <div id="sunburst" sunburst data="fccdata" ng-hide="displayVis"></div>
@@ -34,9 +38,9 @@
         <div id="perspective-sunburst" sunburstperspective data="fccdata" ng-hide="displayVis"></div>
         <div class="display-header">
             <span class="display-title">Topics</span>
-            <span class="section-description">What topics are within comments? We're able to create a hierarchical structure of the most common topics within commenters' messages. To explore topics, use the large sunburst. Hover to display topics, click to zoom in, and click the center to zoom out. The smaller sunburst will help give you some perspective of the overall topic structure.</span>
+            <span class="section-description">What topics are within comments? We're able to create a hierarchical structure of the most common topics within commenters' messages. To explore topics, use the large sunburst. Hover to display topics, click to zoom in, and click the center to zoom out. The smaller sunburst will help give you some perspective of the overall topic structure. This analysis was run on 447,000 FCC comments.</span>
         </div>
-        </div>
+    </div>
 </div>
 
 <!-- <div class="display-header">
