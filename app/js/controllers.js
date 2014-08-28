@@ -45,6 +45,7 @@ angular.module('dacFccComments.controllers', ['dacFccComments.services'])
       };
       $scope.assignColors(root);
       $scope.fccdata = root;
+      $scope.loadCompleted = true;
     }).
     error(function(data, status, headers, config) {
       console.log("Error loading data!" + status);
