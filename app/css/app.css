@@ -85,7 +85,7 @@ a:hover {
 @media (min-width: 990px) {
     .section-description {
         margin: .5em 0em .1em 2em;
-        width: 400px;
+        width: 450px;
         font-size: 1.1em;
     }
 }

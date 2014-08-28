@@ -56,8 +56,11 @@ angular.module('dacFccComments.directives')
             var margin = 140;
             var mobileDisplay = d3.select("body")[0][0].clientWidth < 990;
             var wordMargin = 100;
-            if (mobileDisplay)
+            var yTranslate = 2;
+            if (mobileDisplay) {
               wordMargin = 50;
+              yTranslate = 2.2;
+            }
 
             var width = Math.max((angular.element(window)[0].innerWidth/2) - margin/2, 300)
             var height = angular.element(window)[0].innerHeight - margin*2;
@@ -75,7 +78,7 @@ angular.module('dacFccComments.directives')
               .attr("height", height)
               .append("svg:g")
               .attr("id", "container")
-              .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+              .attr("transform", "translate(" + width / 2 + "," + height / yTranslate + ")");
 
             var partition = d3.layout.partition()
               .value(function(d) {
