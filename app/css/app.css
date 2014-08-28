@@ -23,11 +23,11 @@ a:hover {
     margin: 0;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 #product_title {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-variant: small-caps;
     text-transform: uppercase;
     font-weight: 200;
@@ -47,13 +47,24 @@ a:hover {
 
 /* Sub header for displays */
 .display-header {
-    padding: 2em .5em .5em 2em;
+    padding: 1em .5em .5em 1em;
+    text-align: left;
+    margin-top: 3em;
 }
 .display-title {
-    font-size: 1.3em;
-    color: #2C3E50;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    color: #2980B9;
     font-variant: small-caps;
     text-transform: uppercase;
+}
+.section-description {
+    display: block;
+    margin: .5em 0em .1em 2em;
+    width: 400px;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.4em;
 }
 .interaction {
     display: block;
@@ -64,6 +75,11 @@ a:hover {
 /* Main Vizualization */
 #viz_panel {
     display: inline-block;
+}
+#viz-right-panel {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 7em;
 }
 
 @media (min-width: 990px) {
